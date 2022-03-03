@@ -1,26 +1,15 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="PomodoroApp"/>
+  <StartButton/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import StartButton from './components/StartButton.vue'
+import '@/style/style.scss'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    StartButton
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
