@@ -1,15 +1,15 @@
 <template>
-  <StartButton/>
+  <StartView/>
 </template>
 
 <script>
-import StartButton from './components/StartButton.vue'
+import StartView from '@/views/StartView.vue'
 import '@/style/style.scss'
 
 export default {
   name: 'App',
   components: {
-    StartButton
+    StartView
   }
 }
 </script>
