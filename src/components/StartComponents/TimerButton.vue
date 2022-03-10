@@ -1,24 +1,17 @@
 <template>
-  <div class="startButton">
-    <img draggable="false" :src="PlayCircle"/>
+  <div class="timerButton">
+    XX:XX
   </div>
 </template>
 
 <script>
-  import PlayCircle from "@/assets/play-circle.svg";
-
   export default {
-  name: 'StartButton',
-  setup() {
-      return {
-        PlayCircle
-      }
-    }
+  name: 'TimerButton'
   }
 </script>
 
 <style scoped lang="scss">
-  .startButton {
+  .timerButton {
     height: 285px;
     width: 285px;
     background-color: #ff6042;
@@ -29,7 +22,12 @@
     align-items: center;
     cursor: pointer;
 
-    -webkit-user-select: none;    
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 64px;
+    color: #FFFFFF;
+
+    -webkit-user-select: none;       
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
